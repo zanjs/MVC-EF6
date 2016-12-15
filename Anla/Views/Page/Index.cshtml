@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+  Number:  @ViewBag.Number
+</p>
+
+<p>
+    Name : @ViewBag.Name
+</p>
+<ul>
+@{
+    foreach (string key in ViewBag.list)
+    {
+        <li>
+            @key
+        </li>
+    }
+} 
+    
+</ul>

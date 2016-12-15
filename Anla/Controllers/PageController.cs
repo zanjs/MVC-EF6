@@ -9,14 +9,22 @@ namespace Anla.Controllers
     public class PageController : Controller
     {
         // GET: Page
-        //public ActionResult Index()
+        public ActionResult Index()
+        {
+            ViewBag.Number = 99;
+            ViewBag.Name = "anla";
+            ViewBag.list = new List<string> { "S1", "S2", "S3" };
+            return View();
+        }
+
+        //public String Index(string id)
         //{
-        //    return View();
+        //    return "page id is "+ id;
         //}
 
-        public String Index()
+        public String Another()
         {
-            return "page";
+            return " null";
         }
     }
 }
